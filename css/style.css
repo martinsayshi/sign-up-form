@@ -20,7 +20,7 @@
 .left {
     flex: 1 0 35%; /* set width to 35% */
     height: 100%; /* set full screen height */
-    background-image: url(/img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-image: url(../img/halie-west-25xggax4bSA-unsplash.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
