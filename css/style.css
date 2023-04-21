@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "Odin";
+    src: url(/fonts/Norse-Bold.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.main {
+    display: flex; /* use flexbox */
+    height: 100vh; /* set full screen height */
+    width: 100%; /* set full screen width */
+    
+}
+
+.left {
+    flex: 1 0 35%; /* set width to 35% */
+    height: 100%; /* set full screen height */
+    background-image: url(/img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.418);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30%;
+}
+
+img {
+    height: 160px;
+}
+
+.logo-text,
+.credits {
+    color: white;
+}
+
+.logo-text {
+    font-family: 'Odin', sans-serif;
+    font-size: 122px;
+}
+
+.credits {
+    margin-top: auto;
+    align-self: center;
+}
+
+.right {
+    flex: 0 0 65%; /* set width to 65% */
+    height: 100%; /* set full screen height */
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    background-color: #FFFFFF;
+    flex: 0 0 30%;
+    padding: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.section > p {
+    font-size: 35px;
+    padding-right: 35%;
+    margin-top: 20px;
+    font-weight: 700;
+}
+.section:nth-of-type(odd) {
+    background-color: #F9FAFB;
+    flex: 0 0 35%;
+}
+
+.section:nth-child(2) {
+    justify-content: center;
+}
+
+form > h2 {
+    font-size: 40px;
+}
+
+input {
+    display: block;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    color: #37404C;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+}
+
+input:focus {
+    border: 3px solid #6082E1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.row {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.section:last-child {
+    justify-content: flex-start;
+}
+
+button {
+    padding: 15px;
+    width: 250px;
+    font-size: 25px;
+    color: white;
+    background: #596D48;
+    border: none;
+    border-radius: 15px;
+}
+
+.section > button + p {
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 500;
+}
+
+.psw-error {
+    color: red;
+    position: relative;
+}
